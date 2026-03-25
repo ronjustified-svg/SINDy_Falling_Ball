@@ -167,7 +167,7 @@ v̇ ≈ 12.89 + 0.489·v
 
 | Noise-free (δ = 0.05) | With noise σ = 0.03 m (δ = 0.08) |
 |---|---|
-| <img src="matlab/figures/Dominant_Candidate_Functions_No_Noise.png" width="350"/> | <img src="matlab/figures/Dominant_Candidate_Functions_with_Noise.png" width="350"/> |
+| <img src="figure/Dominant Candidate Functions No Noise .png" width="350"/> | <img src="figure/Dominant Candidate Functions with Noise .png" width="350"/> |
 
 Both models are sparse and stable across conditions. Noise primarily inflates coefficient magnitudes rather than changing the sparsity pattern. The `h` term in the noise-free case is not physical — it arises from collinearity between height and velocity during free fall and is suppressed once noise raises the effective threshold.
 
