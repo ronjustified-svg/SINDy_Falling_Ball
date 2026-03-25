@@ -147,7 +147,7 @@ contrib_j = ‖Θ_j(t) · ξ_j‖₂
 
 | Noise-free | With noise (σ = 0.03 m) |
 |---|---|
-| <img src="figure/Vt_NoNoise.png" width="350"/> | <img src="figure/VT_Noise.png" width="350"/> |
+| <img src="figure/Vt_NoNoise.png" width="350"/> | <img src="figure/VT_Noise.png" width="450"/> |
 
 *Even modest height noise becomes severe corruption in the differentiated velocity signal — a core challenge for SINDy.*
 
