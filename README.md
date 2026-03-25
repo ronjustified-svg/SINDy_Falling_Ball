@@ -19,20 +19,11 @@ The core finding: the true drag law (Brown–Lawler correlation) contains fracti
 ```
 sindy-falling-ball/
 │
-├── matlab/                          # MATLAB implementation 
-│   ├── MBR.m                        # Noise-free run (noise=0, delta=0.05)
-│   ├── MBR_noisy.m                  # Noisy run (noise=0.03m, delta=0.08)
-│   └── figures/                     # Generated output figures
-│       ├── CD_Re_Curve.png
-│       ├── C_D_vs_Re_tcam.png
-│       ├── C_D_vs_Re_tdense.png
-│       ├── Ht_NoNoise.png
-│       ├── HT_Noise.png
-│       ├── Vt_NoNoise.png
-│       ├── VT_Noise.png
-│       ├── Dominant_Candidate_Functions_No_Noise.png
-│       └── Dominant_Candidate_Functions_with_Noise.png
-│
+├# MATLAB implementation 
+│── MBR.m                        # Noise-free run (noise=0, delta=0.05)
+│── MBR_noisy.m                  # Noisy run (noise=0.03m, delta=0.08)
+│── figures/                     # Generated output figures (matlab)
+│ 
 ├── python/                          # Python reimplementation
 │   ├── README.md
 │   ├── simulate.py
