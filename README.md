@@ -141,7 +141,7 @@ contrib_j = ‖Θ_j(t) · ξ_j‖₂
 
 | Noise-free | With noise (σ = 0.03 m) |
 |---|---|
-| <img src="figure/HT_NoNoise.png" width="350"/> | <img src="figure/HT_Noise.png" width="350"/> |
+| <img src="figure/HT_NoNoise.png" width="350"/> | <img src="figure/HT_Noise.png" width="450"/> |
 
 **Velocity trajectories — illustrating noise amplification after differentiation:**
 
