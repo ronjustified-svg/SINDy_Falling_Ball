@@ -141,13 +141,13 @@ contrib_j = ‖Θ_j(t) · ξ_j‖₂
 
 | Noise-free | With noise (σ = 0.03 m) |
 |---|---|
-| <img src="matlab/figures/Ht_NoNoise.png" width="350"/> | <img src="matlab/figures/HT_Noise.png" width="350"/> |
+| <img src="figure/HT_NoNoise.png" width="350"/> | <img src="figure/HT_Noise.png" width="350"/> |
 
 **Velocity trajectories — illustrating noise amplification after differentiation:**
 
 | Noise-free | With noise (σ = 0.03 m) |
 |---|---|
-| <img src="matlab/figures/Vt_NoNoise.png" width="350"/> | <img src="matlab/figures/VT_Noise.png" width="350"/> |
+| <img src="figure/Vt_NoNoise.png" width="350"/> | <img src="figure/VT_Noise.png" width="350"/> |
 
 *Even modest height noise becomes severe corruption in the differentiated velocity signal — a core challenge for SINDy.*
 
