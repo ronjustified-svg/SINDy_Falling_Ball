@@ -1,7 +1,7 @@
 # Nonlinear System Identification via SINDy: Falling-Ball Dynamics
 
 > Investigating the combination of model-based signal processing and data-driven learning for aerodynamic drag identification.  
-> Master's Thesis — Budapest University of Technology and Economics (BME VIK), December 2025  
+> Budapest University of Technology and Economics (BME VIK), December 2025  
 > Supervisor: Dr. Tamás Dabóczi
 
 ---
@@ -19,7 +19,7 @@ The core finding: the true drag law (Brown–Lawler correlation) contains fracti
 ```
 sindy-falling-ball/
 │
-├── matlab/                          # Primary implementation (thesis work)
+├── matlab/                          # MATLAB implementation 
 │   ├── MBR.m                        # Noise-free run (noise=0, delta=0.05)
 │   ├── MBR_noisy.m                  # Noisy run (noise=0.03m, delta=0.08)
 │   └── figures/                     # Generated output figures
@@ -55,7 +55,7 @@ The drag coefficient follows the Brown–Lawler empirical correlation:
 
 $$C_D(\mathrm{Re}) = \frac{24}{\mathrm{Re}}\left(1 + 0.150\,\mathrm{Re}^{0.681}\right) + \frac{0.407}{1 + 8710/\mathrm{Re}}$$
 
-<img src="matlab/figures/CD_Re_Curve.png" width="500"/>
+<img src="figure/CD_Re_Curve.png" width="500"/>
 
 *Brown–Lawler drag coefficient curve — the non-polynomial structure here is why polynomial SINDy cannot recover the true law.*
 
