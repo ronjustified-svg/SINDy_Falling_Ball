@@ -1,7 +1,7 @@
 # Nonlinear System Identification via SINDy: Falling-Ball Dynamics
 
 > Investigating the combination of model-based signal processing and data-driven learning for aerodynamic drag identification.  
-> Budapest University of Technology and Economics (BME VIK), December 2025  
+> Master's Thesis — Budapest University of Technology and Economics (BME VIK), December 2025  
 > Supervisor: Dr. Tamás Dabóczi
 
 ---
@@ -19,7 +19,7 @@ The core finding: the true drag law (Brown–Lawler correlation) contains fracti
 ```
 sindy-falling-ball/
 │
-├── matlab/                          # Primary implementation 
+├── matlab/                          # Primary implementation (thesis work)
 │   ├── MBR.m                        # Noise-free run (noise=0, delta=0.05)
 │   ├── MBR_noisy.m                  # Noisy run (noise=0.03m, delta=0.08)
 │   └── figures/                     # Generated output figures
@@ -55,7 +55,8 @@ The drag coefficient follows the Brown–Lawler empirical correlation:
 
 $$C_D(\mathrm{Re}) = \frac{24}{\mathrm{Re}}\left(1 + 0.150\,\mathrm{Re}^{0.681}\right) + \frac{0.407}{1 + 8710/\mathrm{Re}}$$
 
-![CD vs Re](matlab/figures/CD_Re_Curve.png)
+<img src="matlab/figures/CD_Re_Curve.png" width="500"/>
+
 *Brown–Lawler drag coefficient curve — the non-polynomial structure here is why polynomial SINDy cannot recover the true law.*
 
 **Physical parameters:**
@@ -140,13 +141,13 @@ contrib_j = ‖Θ_j(t) · ξ_j‖₂
 
 | Noise-free | With noise (σ = 0.03 m) |
 |---|---|
-| ![Height no noise](matlab/figures/Ht_NoNoise.png) | ![Height noisy](matlab/figures/HT_Noise.png) |
+| <img src="matlab/figures/Ht_NoNoise.png" width="350"/> | <img src="matlab/figures/HT_Noise.png" width="350"/> |
 
 **Velocity trajectories — illustrating noise amplification after differentiation:**
 
 | Noise-free | With noise (σ = 0.03 m) |
 |---|---|
-| ![Velocity no noise](matlab/figures/Vt_NoNoise.png) | ![Velocity noisy](matlab/figures/VT_Noise.png) |
+| <img src="matlab/figures/Vt_NoNoise.png" width="350"/> | <img src="matlab/figures/VT_Noise.png" width="350"/> |
 
 *Even modest height noise becomes severe corruption in the differentiated velocity signal — a core challenge for SINDy.*
 
@@ -166,7 +167,7 @@ v̇ ≈ 12.89 + 0.489·v
 
 | Noise-free (δ = 0.05) | With noise σ = 0.03 m (δ = 0.08) |
 |---|---|
-| ![SINDy no noise](matlab/figures/Dominant_Candidate_Functions_No_Noise.png) | ![SINDy noisy](matlab/figures/Dominant_Candidate_Functions_with_Noise.png) |
+| <img src="matlab/figures/Dominant_Candidate_Functions_No_Noise.png" width="350"/> | <img src="matlab/figures/Dominant_Candidate_Functions_with_Noise.png" width="350"/> |
 
 Both models are sparse and stable across conditions. Noise primarily inflates coefficient magnitudes rather than changing the sparsity pattern. The `h` term in the noise-free case is not physical — it arises from collinearity between height and velocity during free fall and is suppressed once noise raises the effective threshold.
 
